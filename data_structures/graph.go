@@ -39,6 +39,6 @@ package datastructures
 // 4) Should I use an adjanceny matrix, adjacency list, edge list, or other structure
 // 	  to represent the graph efficiently?
 
-// Shortest Path problem
+// Shortest Path problem:
 // given a weighted graph, find the shortest path of edges from node A to node B
 // algorithms: BFS (unweighted graph, Dijkstra's, Bellman-Ford, Floyd-Warshall, etc)
