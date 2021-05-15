@@ -1,3 +1,3 @@
-module github.com/codewithji/algorithms
+module github.com/codewithji/go-algorithms
 
 go 1.16
