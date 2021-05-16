@@ -1,5 +1,18 @@
 package datastructures
 
+// A trie is a special form of N-ary tree. It's typically used to store strings.
+// The root node is associated with an empty string.
+
+// Important property is that all descendants of a node have a common prefix
+// of the string associated with that node. That's why it's also called a prefix tree.
+
+// You can store the children nodes in the following way:
+// 1) Array of size 26 that goes from 'a' to 'z'
+// Reads would be incredibly fast but unnecessary waste of space may occur
+
+// 2) Map with key, value being chars => corresponding child node
+// Saves space and flexible since we are not dealing with fixed length
+
 type Trie struct {
 	isEnd    bool
 	children map[rune]*Trie
@@ -32,7 +45,6 @@ func (trie *Trie) Insert(word string) {
 	currNode.isEnd = true
 }
 
-/** Returns if the word is in the trie. */
 func (trie *Trie) Search(word string) bool {
 	currNode := trie
 
